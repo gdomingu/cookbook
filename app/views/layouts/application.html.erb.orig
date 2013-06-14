@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 
 
-<h1>Bye Bye BYE<h1>
+<<<<<<< HEAD
+<h1>Bye Bye<h1>
+=======
+<h1>HI<h1>
+>>>>>>> 7474b30b5a2345dd42b7856d7427d6e5da84d579
 <html>
 <head>
   <h3>Cookbook</h3>
