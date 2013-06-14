@@ -11,8 +11,8 @@ exrecipe_description = exrecipe_page.css(".recipe-description p").children[0].co
 
   if Recipe.create(:title => exrecipe_title, :description => exrecipe_description)
         twilio_client = Twilio::REST::Client.new(
-          "grgregre",
-          "c1gergrege"
+          ENV["TWILIO_ID"],
+          ENV["TWILIO_SECRET"]
        )
         twilio_client.account.sms.messages.create(
         :from => '+14156920586',

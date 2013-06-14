@@ -2,7 +2,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :require_authentication
-  before_filter :setup_twilio_client
 
   def current_user
     if session[:user_id]
