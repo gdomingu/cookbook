@@ -1,0 +1,11 @@
+<h1>Log in</h1>
+<!-- Remember here I can't just use rails built in render form so we have to make a custom one. -->
+<%= form_tag sessions_path do  %>
+<%= label_tag :email %>
+<%= text_field_tag :email, params[:email] %> <br>
+
+<%= label_tag :password %>
+<%= password_field_tag :password %><br>
+
+<%= submit_tag %>
+<% end %>

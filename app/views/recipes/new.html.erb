@@ -1,0 +1,14 @@
+<div class= "offset3">
+  <h1>Recipes#new</h1>
+  <p>Find me in app/views/recipes/new.html.erb</p>
+
+<%= form_for @recipe, :url => {:action => 'create'} do |f| %>
+  <label>Title</label><br>
+  <%= f.text_field :title %><br>
+
+  <label>Description</label><br>
+  <%= f.text_area :description %><br>
+
+  <%= f.submit %>
+<% end %>
+</div>
