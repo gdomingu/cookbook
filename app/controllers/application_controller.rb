@@ -17,6 +17,4 @@ class ApplicationController < ActionController::Base
       redirect_to root_path, :alert => "You must be logged in to view this page."
     end
   end
-
-
 end
